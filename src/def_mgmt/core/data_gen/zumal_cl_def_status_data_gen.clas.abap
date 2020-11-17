@@ -8,9 +8,13 @@ CLASS zumal_cl_def_status_data_gen DEFINITION
     INTERFACES zumal_if_standard_data_gen.
 
   PROTECTED SECTION.
+
   PRIVATE SECTION.
+
     METHODS insert_into_main.
+
     METHODS insert_into_text.
+
 ENDCLASS.
 
 
@@ -33,7 +37,6 @@ CLASS zumal_cl_def_status_data_gen IMPLEMENTATION.
     lt_def_status = VALUE #( ( code = '1' ) ( code = '2' ) ( code = '3' ) ( code = '4' ) ( code = '5' ) ).
 
     INSERT zumal_t_def_sts FROM TABLE @lt_def_status.
-
   ENDMETHOD.
 
   METHOD insert_into_text.
@@ -51,7 +54,6 @@ CLASS zumal_cl_def_status_data_gen IMPLEMENTATION.
                                   ( spras = 'R' code = '5' name = 'Разрешен' ) ).
 
     INSERT zumal_t_tdef_sts FROM TABLE @lt_def_status_text.
-
   ENDMETHOD.
 
 ENDCLASS.
