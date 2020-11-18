@@ -36,7 +36,6 @@ CLASS zumal_cl_data_generator IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD run_generate.
-    io_data_gen->before_gen( ).
     io_data_gen->generate_data( ).
   ENDMETHOD.
 
