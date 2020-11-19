@@ -1,5 +1,6 @@
 @EndUserText.label: 'Activity Property BO Projection'
 @AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.allowExtensions: true
 define view entity ZUMAL_C_ActivityProperty
   as projection on ZUMAL_I_ActivityProperty as AcitivityProperty
 {
@@ -12,5 +13,7 @@ define view entity ZUMAL_C_ActivityProperty
       LastChangedBy,
       LocalLastChangedAt,
 
-      _Activity : redirected to parent ZUMAL_C_Activity
+      _Activity : redirected to parent ZUMAL_C_Activity,
+      _PropertyType,
+      _ActivPropTypeAttrValue
 }
