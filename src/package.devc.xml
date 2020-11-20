@@ -5,6 +5,7 @@
    <DEVC>
     <CTEXT>UMAL Trainings</CTEXT>
     <TPCLASS>X</TPCLASS>
+    <SRV_CHECK>X</SRV_CHECK>
    </DEVC>
   </asx:values>
  </asx:abap>

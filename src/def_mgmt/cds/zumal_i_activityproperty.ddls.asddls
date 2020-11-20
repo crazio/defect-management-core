@@ -2,9 +2,9 @@
 @EndUserText.label: 'Activity Property'
 define view entity ZUMAL_I_ActivityProperty
   as select from zumal_t_act_prp as ActivityProperty
-  association        to parent ZUMAL_I_Activity        as _Activity               on $projection.ActivityID = _Activity.ID
-  association [0..1] to ZUMAL_I_PropertyType           as _PropertyType           on $projection.TypeCode = _PropertyType.Code
-  association [0..*] to ZUMAL_I_ActivPropTypeAttrValue as _ActivPropTypeAttrValue on $projection.ID = _ActivPropTypeAttrValue.PropertyID
+  association        to parent ZUMAL_I_Activity        as _Activity     on $projection.ActivityID = _Activity.ID
+  association [0..1] to ZUMAL_I_PropertyType           as _PropertyType on $projection.TypeCode = _PropertyType.Code
+  composition [0..*] of ZUMAL_I_ActivPropTypeAttrValue as _ActivPropTypeAttrValue
 {
   key guid                  as ID,
       activ_id              as ActivityID,
