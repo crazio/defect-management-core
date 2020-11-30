@@ -38,11 +38,13 @@ CLASS zumal_cl_prp_typ_data_gen IMPLEMENTATION.
                                 ( spras = 'E' code = 'P' name = 'Decimal' )
                                 ( spras = 'E' code = 'E' name = 'Timestamp' )
                                 ( spras = 'E' code = 'D' name = 'Date' )
+                                ( spras = 'E' code = 'B' name = 'Boolean' )
                                 ( spras = 'R' code = 'T' name = 'Текст' )
                                 ( spras = 'R' code = 'I' name = 'Целое число' )
                                 ( spras = 'R' code = 'P' name = 'Десятичная дробь' )
                                 ( spras = 'R' code = 'E' name = 'Отметка времени' )
-                                ( spras = 'R' code = 'D' name = 'Дата' ) ).
+                                ( spras = 'R' code = 'D' name = 'Дата' )
+                                ( spras = 'R' code = 'B' name = 'Логический тип' ) ).
 
     INSERT zumal_t_tprp_typ FROM TABLE @lt_prp_type_text.
 

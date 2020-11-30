@@ -1,0 +1,80 @@
+@Metadata.layer: #CORE
+@UI: {
+    headerInfo: {
+        typeName: 'Activity',
+        typeNamePlural: 'Activities',
+        title: { type: #STANDARD, label: 'Activity', value: 'Code' }
+    },
+    presentationVariant: [{ sortOrder: [{ by: 'CreatedAt' }] }]
+}
+annotate view ZUMAL_C_Activity with
+{
+  @UI.facet: [
+    {
+        id: 'General',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'General',
+        position: 10
+    },
+    {
+        id: 'Properties',
+        purpose: #STANDARD,
+        type: #LINEITEM_REFERENCE,
+        label: 'Activity Properties',
+        targetElement: '_ActivityProperty',
+        position: 20
+    }
+  ]
+
+  @UI.hidden: true
+  ID;
+  
+  @UI : { 
+    lineItem: [{ position: 10 }],
+    identification: [{ position: 10 }],
+    selectionField: [{ position: 10 }]
+  }
+  Code;
+  
+  @UI : { 
+    lineItem: [{ position: 20 }],
+    identification: [{ position: 20 }],
+    selectionField: [{ position: 20 }]
+  }
+  Name;
+  
+  @UI : { 
+    lineItem: [{ position: 30 }],
+    identification: [{ position: 30 }]
+  }
+  Description;
+  
+  @UI : { 
+    lineItem: [{ position: 40 }],
+    identification: [{ position: 40 }]
+  }
+  CreatedBy;
+  
+  @UI : { 
+    lineItem: [{ position: 50 }],
+    identification: [{ position: 50 }]
+  }
+  CreatedAt;
+  
+  @UI : { 
+    lineItem: [{ position: 60 }],
+    identification: [{ position: 60 }]
+  }
+  LastChangedBy;
+  
+  @UI : { 
+    lineItem: [{ position: 70 }],
+    identification: [{ position: 70 }]
+  }
+  LastChangedAt;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+}

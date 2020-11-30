@@ -5,7 +5,6 @@
 define root view entity ZUMAL_C_Activity
   as projection on ZUMAL_I_Activity as Activity
 {
-      @UI.hidden: true
   key ID,
       @Search.defaultSearchElement: true
       @Search.fuzzinessThreshold: 0.8

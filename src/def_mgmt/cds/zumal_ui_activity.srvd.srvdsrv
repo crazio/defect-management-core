@@ -1,0 +1,8 @@
+@EndUserText.label: 'Activity Maintenance'
+define service ZUMAL_UI_Activity {
+  expose ZUMAL_C_Activity as Activity;
+  expose ZUMAL_C_ActivityProperty as ActivityProperty;
+  expose ZUMAL_C_ActivPropTypeAttrValue as ActivPropTypeAttrValue;
+  expose ZUMAL_C_PropertyType as PropertyType;
+  expose ZUMAL_C_PropertyTypeAttribute as PropertyTypeAttribute;
+}
