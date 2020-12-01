@@ -5,7 +5,7 @@ CLASS zumal_cl_prp_typ_data_gen DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES zumal_if_standard_data_gen.
+    INTERFACES zumal_if_data_gen.
 
   PROTECTED SECTION.
 
@@ -17,7 +17,7 @@ ENDCLASS.
 
 CLASS zumal_cl_prp_typ_data_gen IMPLEMENTATION.
 
-  METHOD zumal_if_standard_data_gen~generate_data.
+  METHOD zumal_if_data_gen~generate_data.
     DATA: lt_prop_type     TYPE STANDARD TABLE OF zumal_t_prp_typ,
           lt_prp_type_text TYPE STANDARD TABLE OF zumal_t_tprp_typ.
 

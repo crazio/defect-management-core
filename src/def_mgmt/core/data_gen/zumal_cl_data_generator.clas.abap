@@ -13,7 +13,7 @@ CLASS zumal_cl_data_generator DEFINITION
 
     METHODS run_generate
       IMPORTING
-        io_data_gen TYPE REF TO zumal_if_standard_data_gen.
+        io_data_gen TYPE REF TO zumal_if_data_gen.
 
     METHODS generate_standard_data.
 

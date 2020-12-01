@@ -9,7 +9,7 @@ define view ZUMAL_C_PropertyTypeAttribute
 {
       @ObjectModel.text.element: ['Name']
   key AttributeNumber,
-      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZUMAL_I_PropertyType', element: 'Code' }}]
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZUMAL_C_PropertyType', element: 'Code' }}]
   key TypeCode,
       MaintenanceMethod,
       DefaultValue,

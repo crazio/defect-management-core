@@ -54,24 +54,28 @@ annotate view ZUMAL_C_Activity with
     lineItem: [{ position: 40 }],
     identification: [{ position: 40 }]
   }
+  @EndUserText.label: 'Created By'
   CreatedBy;
   
   @UI : { 
     lineItem: [{ position: 50 }],
     identification: [{ position: 50 }]
   }
+  @EndUserText.label: 'Created On'
   CreatedAt;
   
   @UI : { 
     lineItem: [{ position: 60 }],
     identification: [{ position: 60 }]
   }
+  @EndUserText.label: 'Last Changed By'
   LastChangedBy;
   
   @UI : { 
     lineItem: [{ position: 70 }],
     identification: [{ position: 70 }]
   }
+  @EndUserText.label: 'Last Changed On'
   LastChangedAt;
   
   @UI.hidden: true

@@ -5,7 +5,7 @@ CLASS zumal_cl_def_status_data_gen DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES zumal_if_standard_data_gen.
+    INTERFACES zumal_if_data_gen.
 
   PROTECTED SECTION.
 
@@ -17,7 +17,7 @@ ENDCLASS.
 
 CLASS zumal_cl_def_status_data_gen IMPLEMENTATION.
 
-  METHOD zumal_if_standard_data_gen~generate_data.
+  METHOD zumal_if_data_gen~generate_data.
     DATA: lt_def_status      TYPE STANDARD TABLE OF zumal_t_def_sts,
           lt_def_status_text TYPE STANDARD TABLE OF zumal_t_tdef_sts.
 
